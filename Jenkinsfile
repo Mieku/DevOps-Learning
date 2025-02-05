@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'GITHUB_CREDENTIALS_ID', url: 'https://github.com/Mieku/DevOps-Learning.git', branch: 'main'
+                git 'https://github.com/Mieku/DevOps-Learning.git'
             }
         }
         stage('Build Windows') {
