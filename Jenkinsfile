@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Mieku/DevOps-Learning.git'
+                git branch: 'main', url: 'https://github.com/Mieku/DevOps-Learning.git'
             }
         }
         stage('Build Windows') {
